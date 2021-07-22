@@ -481,3 +481,31 @@ z-index: 999999;
 .copyright {
   height: 100px;
 }
+
+.discord-server {
+	margin-top: 50px !important;
+}
+
+.announcements {
+	/**/
+	margin-top: 0px;
+	/**/
+	text-align: center !important;
+	color: #FFFFFF;
+	padding: 20px;
+	font-size: 16px;
+	font-weight: 505 !important;
+	width: auto;
+	display: inline-block;
+	background: rgba(0,245,255,.1);
+    border: 2px solid rgba(0,245,255,.5);
+}
+
+.announcements a {
+	color: #00F5FF !important;
+	font-weight: 700 !important;
+}
+
+.announcements a:hover {
+	cursor: pointer;
+}
