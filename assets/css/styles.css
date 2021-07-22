@@ -37,6 +37,15 @@ kbd.key {
   border-radius: 2px;
   cursor: pointer;
 }
+
+.close2 {
+  height: 20px;
+  background-color: #c30202;
+  border: none;
+  color: #0c0c0c;
+  border-radius: 2px;
+  cursor: pointer;
+}
 /* scroll bar */
 
 ::-webkit-scrollbar {
