@@ -22,5 +22,10 @@ Official XOPBOT Site Made By 👑HACKERPROᵈᵉᵛ#1498
 <br><br><strong>Website Information</strong>
 <br>NSFW: false
 <br>SFW: true
-<br>Widgets: true
-<br>Raiding: false
+<br>Payments: false
+<br>Support: true 
+<br>Adverts: true 
+<br>Widgets: true 
+<br>Raiding: false 
+<br>Desktop Viewing: 100% 
+<br>Mobile Viewing: 80% 
