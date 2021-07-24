@@ -597,3 +597,22 @@ z-index: 999999;
 .footers li a:hover {
   color: var(--footer-text-hover)!important;
 
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+  
+  .nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+}
+  
+   .container-fluid {
+      padding-right: 39px !important;
+    .navbar-expand-md>.container,
+    .navbar-expand-md>.container-fluid {
+      padding-right: 0;
+      padding-left: 0;
