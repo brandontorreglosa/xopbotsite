@@ -590,3 +590,10 @@ z-index: 999999;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
+
+.footers li a {
+  color: var(--footer-text)!important;
+}
+.footers li a:hover {
+  color: var(--footer-text-hover)!important;
+
