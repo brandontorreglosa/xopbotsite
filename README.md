@@ -17,7 +17,7 @@ Official XOPBOT Site Made By 👑HACKERPROᵈᵉᵛ#1498
 <br>Protection: DMCA
 <br>Signature: 👑HACKERPROᵈᵉᵛ#1498 |✅|
 <br>Company: XOPBOT Inc.
-<br>Repository: HACKERPROTM/xopbotsite
+<br>Repository: HACKERPROTM/XOPBOTSITE
 <br>Pull Requests: Glitch
 <br><br><strong>Website Information</strong>
 <br>NSFW: false
