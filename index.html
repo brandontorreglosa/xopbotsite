@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-<!----Just For The Website----><head><script language="javascript">var message ="Right Click Is Disabled! \nNo Source Code For You!";function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }document.onmousedown = rtclickcheck;</script><script> document.onkeydown = function(e) {  if (e.ctrlKey &&  (e.keyCode === 85 )) { alert('No Ctrl+U Allowed \nPlease Be Creative!')  
+<!----Just For The Website----><head><script language="javascript">var message ="Right Click Is Disabled! \nNo Source Code For You!";function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }document.onmousedown = rtclickcheck;</script>
+<script> document.onkeydown = function(e) {  
+  if (e.ctrlKey &&  (e.keyCode === 85 )) 
+{
+alert('No Ctrl+U Allowed \nPlease Be Creative!')  
 return false;  } 
 else {  return true;  }
 }; 
