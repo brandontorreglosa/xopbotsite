@@ -29,3 +29,8 @@ Official XOPBOT Site Made By 👑HACKERPROᵈᵉᵛ#1498
 <br>Raiding: false 
 <br>Desktop Viewing: 100% 
 <br>Mobile Viewing: 80% 
+<br><br><br><strong>How To Get Started?</strong>
+<br>* Easily Import To Your Glitch Project
+<br>* Copy Github Repository Url: HACKERPROTM/XOPBOTSITE
+<br>* Dont Have A Glitch Project? https://glitch.com/
+<br><br>*All Rights To XOPBOT.Inc 
