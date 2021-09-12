@@ -8,15 +8,15 @@ Official XOPBOT Site Made By 👑HACKERPROᵈᵉᵛ#1498
 <br>Time Taken: 3 Weeks
 <br>Bot Date Creation: 14/04/2021
 <br>Bot Servers: 80
-<br>Bot Users: 10120+
-<br>Bot Channels: 1200+
+<br>Bot Users: 12800+
+<br>Bot Channels: 1150+
 <br><br><strong>Website Certification And Protection</strong>
 <br>Certification: SSL
 <br>Certification Company: Starfield
 <br>Certification Expiry: 16/02/2022
 <br>Protection: DMCA
 <br>Signature: 👑HACKERPROᵈᵉᵛ#1498 |✅|
-<br>Company: XOPBOT Inc.
+<br>Company: XOPBOT.Inc
 <br>Repository: HACKERPROTM/XOPBOTSITE
 <br>Pull Requests: Glitch
 <br><br><strong>Website Information</strong>
@@ -29,8 +29,3 @@ Official XOPBOT Site Made By 👑HACKERPROᵈᵉᵛ#1498
 <br>Raiding: false 
 <br>Desktop Viewing: 100% 
 <br>Mobile Viewing: 80% 
-<br><br><strong>How To Get Started?</strong>
-<br>*Easily Import To Your Glitch Project*
-<br>*Copy Github Repository Url: HACKERPROTM/XOPBOTSITE*
-<br>*Dont Have A Glitch Project? https://glitch.com/*
-<br><br>*All Rights To XOPBOT.Inc* 
