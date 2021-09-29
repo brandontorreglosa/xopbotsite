@@ -2,10 +2,11 @@
   --main-color: #34b7db;
   --background: #0c0c0c;
   --secondary: #34b7db;
-  --link: #ff0000;
+  --link: #34b7db;
   --text-color: #ffffff;
   --secondary-text-color: #ffffff;
   --grey: #7c7c7c;
+  --original: #8e8e8e;
 }
 
 kbd.key {
