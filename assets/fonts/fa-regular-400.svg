@@ -24,6 +24,7 @@ Copyright (c) Font Awesome
     underline-thickness="25"
     underline-position="-50"
     unicode-range="U+0020-F5C8"
+    font-display: "swap"
   />
     <missing-glyph />
     <glyph glyph-name="heart" unicode="&#xf004;" 
