@@ -20,12 +20,12 @@ Official XOPBOT Site Made By 👑HACKERPROᵈᵉᵛ#1498
 <br>Repository: HACKERPROTM/XOPBOTSITE
 <br>Pull Requests: Glitch
 <br><br><strong>Website Information</strong>
-<br>NSFW: false
-<br>SFW: true
+<br>NSFW: true/false
+<br>SFW: true/false
 <br>Payments: false
 <br>Support: true 
 <br>Adverts: true 
 <br>Widgets: true 
 <br>Raiding: false 
 <br>Desktop Viewing: 100% 
-<br>Mobile Viewing: 80% 
+<br>Mobile Viewing: 90% 
