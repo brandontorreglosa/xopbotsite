@@ -1,5 +1,5 @@
 # XOPBOTSITE
-![image](https://cdn.discordapp.com/attachments/824319314495537175/893019386003202089/Current_Banner_IDK_Looks_Bad_But_Whatevs.jpg)
+![image](https://cdn.glitch.me/71c27dcf-0138-4bb5-a339-0729851adf98%2FXOPBOT%20Website%20Banner%20Official.jpg?v=1638204040648)
 Official XOPBOT Site Made By 👑HACKERPROᵈᵉᵛ#1498
 <br><br><strong>Website Helpers</strong>
 <br>Supporters: Trixer#8894 , Sacktical Pizza#2264
