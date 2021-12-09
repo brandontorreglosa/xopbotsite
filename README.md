@@ -19,14 +19,14 @@ Official XOPBOT Site Made By 👑HACKERPROᵈᵉᵛ#1498
 <br>Repository: HACKERPROTM/XOPBOTSITE
 <br>Pull Requests: Glitch
 <br><br><strong>Website Information</strong>
-<br>NSFW: true / false
-<br>SFW: true / false
+<br>NSFW: true
+<br>SFW: false
 <br>Payments: true
 <br>Support: true 
-<br>Adverts: true / false 
+<br>Adverts: true
 <br>Widgets: true 
 <br>Raiding: false [SSL Protection]
 <br>Cookies: 2 - 5 [Website]
-<br>Cookies: 65 - 70 [Our 3rd Parties]
+<br>Cookies: 55 - 60 [Our 3rd Parties]
 <br>Desktop Viewing: 100% 
 <br>Mobile Viewing: 100% 
