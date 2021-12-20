@@ -1,0 +1,2 @@
+document.cookie = "Data-User=Collect The Data Of A User To Third Parties Services; expires=Thu, 25 Dec 2030 12:00:00 UTC; path=/"
+document.cookie = "XOPBOT-Services=All Services Available To Everyone; path=/;"
