@@ -21,5 +21,8 @@
     "node",
     "glitch",
     "express"
-  ]
+  ],
+  "devDependencies": {
+    "purgecss": "^4.1.3"
+  }
 }
