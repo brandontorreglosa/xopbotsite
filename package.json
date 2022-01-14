@@ -7,8 +7,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.17.2",
-    "xoppack": "^4.0.0"
+    "express": "^4.17.2"
   },
   "engines": {
     "node": "8.x"
