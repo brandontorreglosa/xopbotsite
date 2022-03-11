@@ -1,6 +1,6 @@
 div.box {
   width: 100%;
-  height: 800px;
+  height: 1500px;
   background-image: url("https://cdn.glitch.global/ee0192b4-293c-47fb-8c35-d64d20c9fb07/black-abstract-background-with-v-shape-layers-vector.jpg?v=1644844143393");
   background-position: center;
   background-repeat: no-repeat;
@@ -53,4 +53,26 @@ div.options{
 }
 #bgraph {
   text-transform: uppercase;
+}
+video {
+  width: 85%;
+  height: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+iframe {
+  width: 85%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.info {
+  text-transform: uppercase;
+  font-family: 'Sans-Serif', cursive;
+  font-size: 25px;
+  padding-bottom: 5px;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
 }
