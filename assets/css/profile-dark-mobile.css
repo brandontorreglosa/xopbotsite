@@ -1,0 +1,6 @@
+@media screen and (max-width: 900px) and (min-width: 0px) {
+  div.dark-biography {
+    height: auto;
+    width: 75%;
+  }
+}
