@@ -90,6 +90,8 @@
     />
     <link async rel="stylesheet" href="/fonts/fontawesome-all.min.css" />
     <link async rel="stylesheet" href="/fonts/font-awesome.min.css" />
+    <link async rel="stylesheet" href="/css/light-mode.css" />
+    <link async rel="stylesheet" href="/css/dropdown.css" />
     <link
       async
       rel="stylesheet"
@@ -103,7 +105,7 @@
     <link async rel="stylesheet" href="/css/styles.css" />
   </head>
   <!----Discord Login And More---->
-  <body style="background-color: var(--background)">
+  <body>
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet"
@@ -176,6 +178,7 @@
     <div id="wrapper">
       <div id="top" style="height: 12px">
         <nav
+          id="b1"
           class="navbar navbar-light navbar-expand fixed-top"
           style="
             color: var(--main-color);
@@ -193,8 +196,8 @@
                 color: var(--main-color);
                 font-family: 'Alfa Slab One', cursive;
               "
-              >XOPBOT <i class="fas fa-user-astronaut"></i
-            ></a>
+              >XOPBOT</a
+            >
             <div class="collapse navbar-collapse" id="navcol-1">
               <ul class="nav navbar-nav">
                 <li class="nav-item">
@@ -203,7 +206,7 @@
                     class="nav-link active smoothScroll animated_rainbow_1"
                     href="#feature"
                     style="color: var(--text-color)"
-                    ><i class="far fa-question-circle"></i> Features</a
+                    >Features</a
                   >
                 </li>
                 <li class="nav-item">
@@ -212,47 +215,107 @@
                     class="nav-link smoothScroll animated_rainbow_1"
                     href="#commands"
                     style="color: var(--text-color)"
-                    ><i class="fas fa-user-robot"></i> Commands</a
+                    >Commands</a
                   >
                 </li>
-                <li class="nav-item">
+                <li id="aboutteaming" class="nav-item">
                   <a
                     title="About Us"
                     class="nav-link smoothScroll animated_rainbow_1"
                     href="#about"
                     style="color: var(--text-color)"
-                    ><i class="far fa-users-crown"></i> About Us</a
+                    >About Us</a
                   >
                 </li>
-                <li class="nav-item">
+                <li id="support" class="nav-item">
                   <a
                     title="Support"
                     class="nav-link animated_rainbow_1"
                     href="https://discord.gg/Sy38Uysm4G"
                     target="_blank"
                     style="color: var(--text-color)"
-                    ><i class="fa fa-user-headset"></i> Support</a
+                    >Support</a
                   >
+                </li>
+                <style>
+                  a.more{display:none;}
+                </style>
+                 <li style="padding-left:5px;" class="nav-item">
+                  <div class="dropdownb">
+                   <a
+                    id="more"
+                    title="More"
+                    class="nav-link animated_rainbow_1 more"
+                    style="color: var(--text-color)"
+                    ><i class="fa fa-ellipsis-h"></i></a
+                  >
+                    <div class="dropdown-contentb">
+                        <a class="text"
+                          >Light Mode&nbsp;&nbsp;&nbsp;<label class="switchb">
+                            <input type="checkbox" />
+                            <span
+                              onclick="light()"
+                              class="sliderb round"
+                            ></span> </label
+                        ></a>
+                        <a class="text"
+                          >Data Usage&nbsp;&nbsp;<label class="switchb">
+                            <input type="checkbox" />
+                            <span class="sliderb round"></span> </label
+                        ></a>
+                        <a class="text"
+                          >Safety Filter&nbsp;&nbsp;<label class="switchb">
+                            <input type="checkbox" />
+                            <span class="sliderb round"></span> </label
+                        ></a>
+                        <a class="text"
+                          >Web Shield&nbsp;&nbsp;&nbsp;<label class="switchb">
+                            <input type="checkbox" />
+                            <span class="sliderb round"></span> </label
+                        ></a>
+                        <a href="/services/logger/login">Log In</a>
+                      </div>
+                   </div>
                 </li>
               </ul>
               <ul class="navbar-nav ml-auto">
-                <div class="userarea">
-                  <a
-                    title="Premium"
-                    class="btn btn-primary text-left animated_rainbow_1"
-                    href="#donations"
-                    ><i class="fas fa-crown"></i>&nbsp;Premium</a
-                  >
-                </div>
-                &nbsp;&nbsp;
                 <section>
                   <div class="userarea">
-                    <a
-                      title="Log In"
-                      class="btn btn-primary text-left animated_rainbow_1"
-                      href="/services/logger/log-in/"
-                      ><i class="fab fa-discord fa-fw"></i>&nbsp;Log In</a
-                    >
+                    <div class="dropdown">
+                      <a title="Account" alt="Account"
+                        ><img
+                          width="36"
+                          height="36"
+                          src="https://cdn.glitch.global/ee0192b4-293c-47fb-8c35-d64d20c9fb07/R.png?v=1651692936120"
+                        />
+                      </a>
+                      <div class="dropdown-content">
+                        <a class="text"
+                          >Light Mode&nbsp;&nbsp;&nbsp;<label class="switchb">
+                            <input type="checkbox" />
+                            <span
+                              onclick="light()"
+                              class="sliderb round"
+                            ></span> </label
+                        ></a>
+                        <a class="text"
+                          >Data Usage&nbsp;&nbsp;<label class="switchb">
+                            <input type="checkbox" />
+                            <span class="sliderb round"></span> </label
+                        ></a>
+                        <a class="text"
+                          >Safety Filter&nbsp;&nbsp;<label class="switchb">
+                            <input type="checkbox" />
+                            <span class="sliderb round"></span> </label
+                        ></a>
+                        <a class="text"
+                          >Web Shield&nbsp;&nbsp;&nbsp;<label class="switchb">
+                            <input type="checkbox" />
+                            <span class="sliderb round"></span> </label
+                        ></a>
+                        <a href="/services/logger/login">Log In</a>
+                      </div>
+                    </div>
                   </div>
                 </section>
               </ul>
@@ -270,15 +333,15 @@
           class="that-is-pfp"
           width="150"
           height="150"
-          style="margin-top: 30px;border: 5px solid grey;border-radius: 5px;"
+          style="margin-top: 30px; border: 5px solid red; border-radius: 5px"
           alt="XOPBOT"
-          title="Offline"
+          title="Do Not Disturb"
           loading="lazy"
         />
         <h1 class="d-xl-flex justify-content-xl-start animated_rainbow_1">
           XOPBOT
         </h1>
-        <p style="color: var(--secondary-text-color)">
+        <p id="a1" class="text">
           XOPBOT Is A Multipurpose Bot With Over 200+ Commands That Make You
           Love The Bot!
         </p>
@@ -918,10 +981,7 @@
         </center>
         <!----About Us And More---->
         <div id="about">
-          <section
-            class="clean-block about-us"
-            style="background: var(--background)"
-          >
+          <section class="clean-block about-us">
             <div class="container">
               <div class="block-heading">
                 <h2 class="text-center" style="color: var(--text-color)">
@@ -1772,6 +1832,21 @@
                       <option value="en|yo">Yoruba</option>
                       <option value="en|zu">Zulu</option>
                     </select>
+                    <li style="padding-top: 15px">
+                      <a id="rar">Light Mode</a>
+                    </li>
+                    <a
+                      ><label class="switch">
+                        <input type="checkbox" />
+                        <span onclick="light()" class="slider round"></span>
+                      </label>
+                    </a>
+                    <script>
+                      function light() {
+                        var el = document.body;
+                        el.classList.toggle("light-body");
+                      }
+                    </script>
                     <div id="google_translate_element2"></div>
                     <script type="text/javascript">
                       function googleTranslateElementInit2() {
@@ -1834,26 +1909,14 @@
           </section>
           <!----XOPBOT's Footer---->
           <footer>
-            <div
-              style="
-                background: var(--background);
-                padding-top: 0px;
-                padding-bottom: 0px;
-              "
-            >
+            <div style="padding-top: 0px; padding-bottom: 0px">
               <!---<div class="container" style="color: var(--secondary);"><div class="row" style="color: var(--secondary);"><!----<div class="col item social"><a class="smoothScroll" href="#top"><i class="icon ion-android-arrow-up"></i></a></div>----</div>--->
-              <p class="text-center" style="color: var(--text-color)">
+              <p class="text-center text">
                 Copyright XOPBOT 2021 - 2022 © All Rights Reserved
               </p>
               <br />
-              <p
-                class="text-center"
-                style="color: var(--text-color); padding: 0px"
-              >
-                Created by&nbsp;
-                <a href="https://discord.com/" style="color: var(--text-color)">
-                  👑HACKERPROᵈᵉᵛ#1498
-                </a>
+              <p class="text-center text" style="padding: 0px">
+                Created by&nbsp; 👑HACKERPROᵈᵉᵛ#1498
               </p>
             </div>
           </footer>
