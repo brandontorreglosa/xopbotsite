@@ -176,15 +176,14 @@
       }
     </style>
     <div id="wrapper">
-      <div id="top" style="height: 12px">
+      <div id="top" style="height: 12px;display:block;">
         <nav
-          id="b1"
           class="navbar navbar-light navbar-expand fixed-top"
           style="
             color: var(--main-color);
             border-top-width: 6px;
             border-top-style: solid;
-            background: var(--background);
+            background: #0c0c0c;
           "
         >
           <div class="container-fluid">
@@ -238,44 +237,52 @@
                   >
                 </li>
                 <style>
-                  a.more{display:none;}
+                  a.more {
+                    display: none;
+                  }
                 </style>
-                 <li style="padding-left:5px;" class="nav-item">
+                <li style="padding-left: 5px" class="nav-item">
                   <div class="dropdownb">
-                   <a
-                    id="more"
-                    title="More"
-                    class="nav-link animated_rainbow_1 more"
-                    style="color: var(--text-color)"
-                    ><i class="fa fa-ellipsis-h"></i></a
-                  >
+                    <a
+                      id="more"
+                      title="More"
+                      class="nav-link animated_rainbow_1 more"
+                      style="color: var(--text-color)"
+                      ><i class="fa fa-ellipsis-h"></i
+                    ></a>
                     <div class="dropdown-contentb">
-                        <a class="text"
-                          >Light Mode&nbsp;&nbsp;&nbsp;<label class="switchb">
-                            <input type="checkbox" />
-                            <span
-                              onclick="light()"
-                              class="sliderb round"
-                            ></span> </label
-                        ></a>
-                        <a class="text"
-                          >Data Usage&nbsp;&nbsp;<label class="switchb">
-                            <input type="checkbox" />
-                            <span class="sliderb round"></span> </label
-                        ></a>
-                        <a class="text"
-                          >Safety Filter&nbsp;&nbsp;<label class="switchb">
-                            <input type="checkbox" />
-                            <span class="sliderb round"></span> </label
-                        ></a>
-                        <a class="text"
-                          >Web Shield&nbsp;&nbsp;&nbsp;<label class="switchb">
-                            <input type="checkbox" />
-                            <span class="sliderb round"></span> </label
-                        ></a>
-                        <a href="/services/logger/login">Log In</a>
-                      </div>
-                   </div>
+                      <a class="text"
+                        >Light Mode&nbsp;&nbsp;&nbsp;<label class="switchb">
+                          <input type="checkbox" />
+                          <span
+                            onclick="light()"
+                            class="sliderb round"
+                          ></span> </label
+                      ></a>
+                      <a class="text"
+                        >Data Usage&nbsp;&nbsp;<label class="switchb">
+                          <input type="checkbox" />
+                          <span class="sliderb round"></span> </label
+                      ></a>
+                      <a class="text"
+                        >Safety Filter&nbsp;&nbsp;<label class="switchb">
+                          <input type="checkbox" />
+                          <span
+                            onclick="safe()"
+                            class="sliderb round"
+                          ></span> </label
+                      ></a>
+                      <a class="text"
+                        >Web Shield&nbsp;&nbsp;&nbsp;<label class="switchb">
+                          <input type="checkbox" />
+                          <span
+                            onclick="web()"
+                            class="sliderb round"
+                          ></span> </label
+                      ></a>
+                      <a href="/services/logger/login">Log In</a>
+                    </div>
+                  </div>
                 </li>
               </ul>
               <ul class="navbar-nav ml-auto">
@@ -284,8 +291,15 @@
                     <div class="dropdown">
                       <a title="Account" alt="Account"
                         ><img
-                          width="36"
-                          height="36"
+                          style="
+                            border: 3px solid white;
+                            border-radius: 19px;
+                            border-shadow: 5px 5px 5px 5px #ffffff,
+                              5px 5px 5px 5px #ffffff;
+                          "
+                          width="37"
+                          height="37"
+                          loading="lazy"
                           src="https://cdn.glitch.global/ee0192b4-293c-47fb-8c35-d64d20c9fb07/R.png?v=1651692936120"
                         />
                       </a>
@@ -306,12 +320,185 @@
                         <a class="text"
                           >Safety Filter&nbsp;&nbsp;<label class="switchb">
                             <input type="checkbox" />
-                            <span class="sliderb round"></span> </label
+                            <span
+                              onclick="safe()"
+                              class="sliderb round"
+                            ></span> </label
                         ></a>
                         <a class="text"
                           >Web Shield&nbsp;&nbsp;&nbsp;<label class="switchb">
                             <input type="checkbox" />
+                            <span
+                              onclick="web()"
+                              class="sliderb round"
+                            ></span> </label
+                        ></a>
+                        <a href="/services/logger/login">Log In</a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+        <div id="top1" style="height: 12px;display:none;">
+        <nav
+          class="navbar navbar-light navbar-expand fixed-top"
+          style="
+            color: var(--main-color);
+            border-top-width: 6px;
+            border-top-style: solid;
+            background: #ffffff;
+          "
+        >
+          <div class="container-fluid">
+            <a
+              title="XOPBOT"
+              class="navbar-brand"
+              href="#top1"
+              style="
+                color: var(--main-color);
+                font-family: 'Alfa Slab One', cursive;
+              "
+              >XOPBOT</a
+            >
+            <div class="collapse navbar-collapse" id="navcol-1">
+              <ul class="nav navbar-nav">
+                <li class="nav-item">
+                  <a
+                    title="Features"
+                    class="nav-link active smoothScroll animated_rainbow_1"
+                    href="#feature"
+                    style="color: var(--text-color)"
+                    >Features</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    title="Commands"
+                    class="nav-link smoothScroll animated_rainbow_1"
+                    href="#commands"
+                    style="color: var(--text-color)"
+                    >Commands</a
+                  >
+                </li>
+                <li id="aboutteaming" class="nav-item">
+                  <a
+                    title="About Us"
+                    class="nav-link smoothScroll animated_rainbow_1"
+                    href="#about"
+                    style="color: var(--text-color)"
+                    >About Us</a
+                  >
+                </li>
+                <li id="support" class="nav-item">
+                  <a
+                    title="Support"
+                    class="nav-link animated_rainbow_1"
+                    href="https://discord.gg/Sy38Uysm4G"
+                    target="_blank"
+                    style="color: var(--text-color)"
+                    >Support</a
+                  >
+                </li>
+                <style>
+                  a.more {
+                    display: none;
+                  }
+                </style>
+                <li style="padding-left: 5px" class="nav-item">
+                  <div class="dropdownb">
+                    <a
+                      id="more"
+                      title="More"
+                      class="nav-link animated_rainbow_1 more"
+                      style="color: var(--text-color)"
+                      ><i class="fa fa-ellipsis-h"></i
+                    ></a>
+                    <div class="dropdown-contentb">
+                      <a class="text"
+                        >Dark Mode&nbsp;&nbsp;&nbsp;<label class="switchb">
+                          <input type="checkbox" />
+                          <span
+                            onclick="light()"
+                            class="sliderb round"
+                          ></span> </label
+                      ></a>
+                      <a class="text"
+                        >Data Usage&nbsp;&nbsp;<label class="switchb">
+                          <input type="checkbox" />
+                          <span class="sliderb round"></span> </label
+                      ></a>
+                      <a class="text"
+                        >Safety Filter&nbsp;&nbsp;<label class="switchb">
+                          <input type="checkbox" />
+                          <span
+                            onclick="safe()"
+                            class="sliderb round"
+                          ></span> </label
+                      ></a>
+                      <a class="text"
+                        >Web Shield&nbsp;&nbsp;&nbsp;<label class="switchb">
+                          <input type="checkbox" />
+                          <span
+                            onclick="web()"
+                            class="sliderb round"
+                          ></span> </label
+                      ></a>
+                      <a href="/services/logger/login">Log In</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <section>
+                  <div class="userarea">
+                    <div class="dropdown">
+                      <a title="Account" alt="Account"
+                        ><img
+                          style="
+                            border: 3px solid black;
+                            border-radius: 19px;
+                            border-shadow: 5px 5px 5px 5px #0c0c0c,
+                              5px 5px 5px 5px #0c0c0c;
+                          "
+                          width="37"
+                          height="37"
+                          loading="lazy"
+                          src="https://cdn.glitch.global/ee0192b4-293c-47fb-8c35-d64d20c9fb07/R.png?v=1651692936120"
+                        />
+                      </a>
+                      <div class="dropdown-content">
+                        <a class="text"
+                          >Dark Mode&nbsp;&nbsp;&nbsp;<label class="switchb">
+                            <input type="checkbox" />
+                            <span
+                              onclick="light()"
+                              class="sliderb round"
+                            ></span> </label
+                        ></a>
+                        <a class="text"
+                          >Data Usage&nbsp;&nbsp;<label class="switchb">
+                            <input type="checkbox" />
                             <span class="sliderb round"></span> </label
+                        ></a>
+                        <a class="text"
+                          >Safety Filter&nbsp;&nbsp;<label class="switchb">
+                            <input type="checkbox" />
+                            <span
+                              onclick="safe()"
+                              class="sliderb round"
+                            ></span> </label
+                        ></a>
+                        <a class="text"
+                          >Web Shield&nbsp;&nbsp;&nbsp;<label class="switchb">
+                            <input type="checkbox" />
+                            <span
+                              onclick="web()"
+                              class="sliderb round"
+                            ></span> </label
                         ></a>
                         <a href="/services/logger/login">Log In</a>
                       </div>
@@ -341,7 +528,11 @@
         <h1 class="d-xl-flex justify-content-xl-start animated_rainbow_1">
           XOPBOT
         </h1>
-        <p id="a1" class="text">
+        <p id="a1" style="display: block; color: var(--text-color)">
+          XOPBOT Is A Multipurpose Bot With Over 200+ Commands That Make You
+          Love The Bot!
+        </p>
+        <p id="a2" style="display: none; color: var(--background)">
           XOPBOT Is A Multipurpose Bot With Over 200+ Commands That Make You
           Love The Bot!
         </p>
@@ -467,8 +658,16 @@
         <div class="team-clean" style="background: rgba(0, 0, 0, 0)">
           <div class="container" style="filter: blur(0px); padding-bottom: 0px">
             <h3
+              id="a3"
               class="text-center name"
-              style="color: var(--secondary-text-color)"
+              style="display: block; color: var(--text-color)"
+            >
+              My Bots Main Server
+            </h3>
+            <h3
+              id="a4"
+              class="text-center name"
+              style="display: none; color: var(--background)"
             >
               My Bots Main Server
             </h3>
@@ -544,14 +743,29 @@
           <div class="container">
             <center>
               <strong>
-                <h2>XOPBOT'S Commands</h2>
+                <h2 id="a5" style="display: block; color: var(--text-color)">
+                  XOPBOT'S Commands
+                </h2>
+              </strong>
+              <strong>
+                <h2 id="a6" style="display: none; color: var(--background)">
+                  XOPBOT'S Commands
+                </h2>
               </strong>
             </center>
             <div class="accordion">
               <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false">
+                <button id="accordion-button-7" aria-expanded="false">
                   <span class="accordion-title animated_rainbow_1"
-                    >Moderation Commands (20)</span
+                    >Bug Commands (3)</span
+                  >
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                  <span class="accordion-title animated_rainbow_1"
+                    >Fun Commands (18)</span
                   >
                   <span class="icon" aria-hidden="true"></span>
                 </button>
@@ -575,7 +789,7 @@
               <div class="accordion-item">
                 <button id="accordion-button-3" aria-expanded="false">
                   <span class="accordion-title animated_rainbow_1"
-                    >Image Commands (35)</span
+                    >Image Commands (40)</span
                   >
                   <span class="icon" aria-hidden="true"></span>
                 </button>
@@ -584,38 +798,6 @@
                 <button id="accordion-button-4" aria-expanded="false">
                   <span class="accordion-title animated_rainbow_1"
                     >Music Commands (10)</span
-                  >
-                  <span class="icon" aria-hidden="true"></span>
-                </button>
-              </div>
-              <div class="accordion-item">
-                <button id="accordion-button-5" aria-expanded="false">
-                  <span class="accordion-title animated_rainbow_1"
-                    >Fun Commands (18)</span
-                  >
-                  <span class="icon" aria-hidden="true"></span>
-                </button>
-              </div>
-              <div class="accordion-item">
-                <button id="accordion-button-6" aria-expanded="false">
-                  <span class="accordion-title animated_rainbow_1"
-                    >Economy Commands (15)</span
-                  >
-                  <span class="icon" aria-hidden="true"></span>
-                </button>
-              </div>
-              <div class="accordion-item">
-                <button id="accordion-button-7" aria-expanded="false">
-                  <span class="accordion-title animated_rainbow_1"
-                    >Bug Commands (3)</span
-                  >
-                  <span class="icon" aria-hidden="true"></span>
-                </button>
-              </div>
-              <div class="accordion-item">
-                <button id="accordion-button-8" aria-expanded="false">
-                  <span class="accordion-title animated_rainbow_1"
-                    >Leveling Commands (4)</span
                   >
                   <span class="icon" aria-hidden="true"></span>
                 </button>
@@ -637,17 +819,6 @@
                 </button>
               </div>
               <div class="accordion-item">
-                <button id="accordion-button-11" aria-expanded="false">
-                  <span class="accordion-title animated_rainbow_1"
-                    >Usage Commands (0)</span
-                  >
-                  <span class="icon" aria-hidden="true"></span>
-                </button>
-                <div class="accordion-content">
-                  <p>Closed</p>
-                </div>
-              </div>
-              <div class="accordion-item">
                 <button id="accordion-button-12" aria-expanded="false">
                   <span class="accordion-title animated_rainbow_1"
                     >Invite Commands (3)</span
@@ -655,7 +826,7 @@
                   <span class="icon" aria-hidden="true"></span>
                 </button>
               </div>
-              <div class="accordion-item">
+              <div id="nsfw" style="display: block" class="accordion-item">
                 <button id="accordion-button-15" aria-expanded="false">
                   <span class="accordion-title animated_rainbow_1"
                     >NSFW Commands (45)</span
@@ -664,9 +835,33 @@
                 </button>
               </div>
               <div class="accordion-item">
+                <button id="accordion-button-8" aria-expanded="false">
+                  <span class="accordion-title animated_rainbow_1"
+                    >Leveling Commands (4)</span
+                  >
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="accordion-item">
                 <button id="accordion-button-13" aria-expanded="false">
                   <span class="accordion-title animated_rainbow_1"
                     >Premium Commands (5)</span
+                  >
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-6" aria-expanded="false">
+                  <span class="accordion-title animated_rainbow_1"
+                    >Economy Commands (15)</span
+                  >
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title animated_rainbow_1"
+                    >Moderation Commands (20)</span
                   >
                   <span class="icon" aria-hidden="true"></span>
                 </button>
@@ -720,8 +915,13 @@
         <section class="clean-block features">
           <div class="container">
             <div class="block-heading">
-              <h2 style="color: var(--bot)">Features</h2>
-              <p>
+              <h2 id="a7" style="display: block; color: var(--text-color)">
+                Features
+              </h2>
+              <h2 id="a8" style="display: none; color: var(--background)">
+                Features
+              </h2>
+              <p style="color: var(--grey)">
                 Yeah, our bot is cool and all, but have you seen all the
                 features?
               </p>
@@ -760,13 +960,24 @@
                 <p>
                   All your information is safe with us. It's hidden like a
                   ghost, and if you ask we'll also murder your information from
-                  our database.&nbsp;
+                  our database as long as you agree.
                 </p>
               </div>
             </div>
           </div>
         </section>
-        <h2 class="text-center" style="color: var(--text-color)">
+        <h2
+          id="a9"
+          class="text-center"
+          style="display: block; color: var(--text-color)"
+        >
+          Code Tutorial
+        </h2>
+        <h2
+          id="a10"
+          class="text-center"
+          style="display: none; color: var(--background)"
+        >
           Code Tutorial
         </h2>
         <br />
@@ -845,7 +1056,7 @@
                       <li class="oip" data-speed="0.25">0.25</li>
                       <li class="oip" data-speed="0.5">0.5</li>
                       <li class="oip" data-speed="0.75">0.75</li>
-                      <li class="oip" data-speed="1" class="active">Normal</li>
+                      <li class="oip active" data-speed="1">Normal</li>
                       <li class="oip" data-speed="1.25">1.25</li>
                       <li class="oip" data-speed="1.5">1.5</li>
                       <li class="oip" data-speed="1.75">1.75</li>
@@ -930,8 +1141,10 @@
                 </a>
               </div>
               <br />
-              <div class="video_title magic_fade_in">
-                Check Out Our Youtube Video Clicking The Play Button
+              <div style="display: block" class="video_title magic_fade_in">
+                <a class="text"
+                  >Check Out Our Youtube Video Clicking The Play Button</a
+                >
               </div>
             </div>
           </div>
@@ -984,10 +1197,21 @@
           <section class="clean-block about-us">
             <div class="container">
               <div class="block-heading">
-                <h2 class="text-center" style="color: var(--text-color)">
+                <h2
+                  id="a11"
+                  class="text-center"
+                  style="display: block; color: var(--text-color)"
+                >
                   About The Team
                 </h2>
-                <p class="text-center" style="color: var(--text-color)">
+                <h2
+                  id="a12"
+                  class="text-center"
+                  style="display: none; color: var(--background)"
+                >
+                  About The Team
+                </h2>
+                <p class="text-center" style="color: var(--grey)">
                   You like this bot? Why not check out the team that worked on
                   it!
                 </p>
@@ -1181,10 +1405,13 @@
             </a>
           </center>
           <br /><br /><br /><br /><br /><br /><br />
-          <section>
+          <section id="donations">
             <strong>
               <center>
-                <h1 id="donations" style="color: var(--text-color)">
+                <h1 id="a13" style="display: block; color: var(--text-color)">
+                  Patreon Donations
+                </h1>
+                <h1 id="a14" style="display: none; color: var(--background)">
                   Patreon Donations
                 </h1>
                 <div class="donate-subtitle">
@@ -1354,7 +1581,7 @@
           <section>
             <center>
               <div id="announcement" announcement="1" class="announcements">
-                Do you need our help?
+                <a class="text">Do you need our help?</a>
                 <span>
                   <a
                     target="popup"
@@ -1369,43 +1596,94 @@
             <script src="https://cdn.filobot.xyz/assets/js/ICFLqiSaEoGVY8T6VCPDQouyePHDRoI0v7tmqfCIRyyoWv2sZq.js"></script>
             <br /><br /><br />
             <center>
-              <h2 style="color: var(--text-color)">
-                Frequently Asked Questions:
-              </h2>
-              <p class="text-center" style="color: var(--original)">
-                The Most Frequent Questions Asked About XOPBOT!
-              </p>
-              <br />
-              <h3 style="color: var(--main-color)">1.</h3>
-              <p style="color: var(--original)">Is It True XOPBOT Is Safe?</p>
-              <p style="color: var(--text-color)">
-                Yes, XOPBOT Is 100% Safe We Dont Use Any Dangerous Code In Our
-                Bot!
-              </p>
-              <br />
-              <h3 style="color: var(--main-color)">2.</h3>
-              <p style="color: var(--original)">When Was XOPBOT Created?</p>
-              <p style="color: var(--text-color)">
-                XOPBOT Was Created In April 14 2021!
-              </p>
-              <br />
-              <h3 style="color: var(--main-color)">3.</h3>
-              <p style="color: var(--original)">Is XOPBOT Buggy By Anyway?</p>
-              <p style="color: var(--text-color)">
-                No, But If You Do Find A Bug You Can Report It!
-              </p>
-              <br />
-              <h3 style="color: var(--main-color)">4.</h3>
-              <p style="color: var(--original)">Does XOPBOT Have NSFW?</p>
-              <p style="color: var(--text-color)">
-                Yes, XOPBOT Has NSFW But You Must Agree To The Terms!
-              </p>
-              <br />
-              <h3 style="color: var(--main-color)">5.</h3>
-              <p style="color: var(--original)">Does XOPBOT Have 24/7 Music?</p>
-              <p style="color: var(--text-color)">
-                Yes, XOPBOT Does Have 24/7 Music For Absolutely Free!
-              </p>
+              <div id="a15" style="display: block">
+                <h2 style="color: var(--text-color)">
+                  Frequently Asked Questions:
+                </h2>
+                <p class="text-center" style="color: var(--original)">
+                  The Most Frequent Questions Asked About XOPBOT!
+                </p>
+                <br />
+                <h3 style="color: var(--main-color)">1.</h3>
+                <p style="color: var(--original)">Is It True XOPBOT Is Safe?</p>
+                <p style="color: var(--text-color)">
+                  Yes, XOPBOT Is 100% Safe We Dont Use Any Dangerous Code In Our
+                  Bot!
+                </p>
+                <br />
+                <h3 style="color: var(--main-color)">2.</h3>
+                <p style="color: var(--original)">When Was XOPBOT Created?</p>
+                <p style="color: var(--text-color)">
+                  XOPBOT Was Created In April 14 2021!
+                </p>
+                <br />
+                <h3 style="color: var(--main-color)">3.</h3>
+                <p style="color: var(--original)">Is XOPBOT Buggy By Anyway?</p>
+                <p style="color: var(--text-color)">
+                  No, But If You Do Find A Bug You Can Report It!
+                </p>
+                <br />
+                <h3 style="color: var(--main-color)">4.</h3>
+                <p style="color: var(--original)">
+                  Does XOPBOT Have <a class="good" id="bad1">NSFW?</a>
+                </p>
+                <p style="color: var(--text-color)">
+                  Yes, XOPBOT Has <a class="good" id="bad2">NSFW</a> But You
+                  Must Agree To The Terms!
+                </p>
+                <br />
+                <h3 style="color: var(--main-color)">5.</h3>
+                <p style="color: var(--original)">
+                  Does XOPBOT Have 24/7 Music?
+                </p>
+                <p style="color: var(--text-color)">
+                  Yes, XOPBOT Does Have 24/7 Music For Absolutely Free!
+                </p>
+              </div>
+              <div id="a16" style="display: none">
+                <h2 style="color: var(--background)">
+                  Frequently Asked Questions:
+                </h2>
+                <p class="text-center" style="color: var(--original)">
+                  The Most Frequent Questions Asked About XOPBOT!
+                </p>
+                <br />
+                <h3 style="color: var(--main-color)">1.</h3>
+                <p style="color: var(--original)">Is It True XOPBOT Is Safe?</p>
+                <p style="color: var(--background)">
+                  Yes, XOPBOT Is 100% Safe We Dont Use Any Dangerous Code In Our
+                  Bot!
+                </p>
+                <br />
+                <h3 style="color: var(--main-color)">2.</h3>
+                <p style="color: var(--original)">When Was XOPBOT Created?</p>
+                <p style="color: var(--background)">
+                  XOPBOT Was Created In April 14 2021!
+                </p>
+                <br />
+                <h3 style="color: var(--main-color)">3.</h3>
+                <p style="color: var(--original)">Is XOPBOT Buggy By Anyway?</p>
+                <p style="color: var(--background)">
+                  No, But If You Do Find A Bug You Can Report It!
+                </p>
+                <br />
+                <h3 style="color: var(--main-color)">4.</h3>
+                <p style="color: var(--original)">
+                  Does XOPBOT Have <a class="good" id="bad3">NSFW?</a>
+                </p>
+                <p style="color: var(--background)">
+                  Yes, XOPBOT Has <a class="good" id="bad4">NSFW</a> But You
+                  Must Agree To The Terms!
+                </p>
+                <br />
+                <h3 style="color: var(--main-color)">5.</h3>
+                <p style="color: var(--original)">
+                  Does XOPBOT Have 24/7 Music?
+                </p>
+                <p style="color: var(--background)">
+                  Yes, XOPBOT Does Have 24/7 Music For Absolutely Free!
+                </p>
+              </div>
               <br /><br /><br /><br /><br />
               <center>
                 <strong>
@@ -1565,7 +1843,20 @@
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-2 footers-two">
-                  <p class="uppercase bold footer-title is-size-5">Menu</p>
+                  <p
+                    id="a17"
+                    style="display: block; color: var(--text-color)"
+                    class="uppercase bold footer-title is-size-5"
+                  >
+                    Menu
+                  </p>
+                  <p
+                    id="a18"
+                    style="display: none; color: var(--background)"
+                    class="uppercase bold footer-title is-size-5"
+                  >
+                    Menu
+                  </p>
                   <ul class="list-unstyled">
                     <li>
                       <a title="Home" href="#top" class="animated_rainbow_1"
@@ -1623,7 +1914,18 @@
                   </ul>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-2 footers-three">
-                  <p class="uppercase bold footer-title is-size-5">
+                  <p
+                    id="a19"
+                    style="display: block; color: var(--text-color)"
+                    class="uppercase bold footer-title is-size-5"
+                  >
+                    Social Media
+                  </p>
+                  <p
+                    id="a20"
+                    style="display: none; color: var(--background)"
+                    class="uppercase bold footer-title is-size-5"
+                  >
                     Social Media
                   </p>
                   <ul class="list-unstyled">
@@ -1700,10 +2002,34 @@
                   </ul>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-2 footers-three">
-                  <p class="uppercase bold footer-title is-size-5">Extras</p>
+                  <p
+                    id="a21"
+                    style="display: block; color: var(--text-color)"
+                    class="uppercase bold footer-title is-size-5"
+                  >
+                    Extras
+                  </p>
+                  <p
+                    id="a22"
+                    style="display: none; color: var(--background)"
+                    class="uppercase bold footer-title is-size-5"
+                  >
+                    Extras
+                  </p>
                   <ul class="list-unstyled">
-                    <li>
-                      <a title="Languages" href="https://xopbot.glitch.me/"
+                    <li id="a23" style="display:block;">
+                      <a
+                        style="color: var(--text-color);"
+                        title="Languages"
+                        href="https://xopbot.glitch.me/"
+                        >Languages</a
+                      >
+                    </li>
+                    <li id="a24" style="display:none;">
+                      <a
+                        style="color: var(--background);"
+                        title="Languages"
+                        href="https://xopbot.glitch.me/"
                         >Languages</a
                       >
                     </li>
@@ -1833,7 +2159,16 @@
                       <option value="en|zu">Zulu</option>
                     </select>
                     <li style="padding-top: 15px">
-                      <a id="rar">Light Mode</a>
+                      <a
+                        id="a25"
+                        style="display: block; color: var(--text-color)"
+                        >Light Mode</a
+                      >
+                      <a
+                        id="a26"
+                        style="display: none; color: var(--background)"
+                        >Light Mode</a
+                      >
                     </li>
                     <a
                       ><label class="switch">
@@ -1841,10 +2176,46 @@
                         <span onclick="light()" class="slider round"></span>
                       </label>
                     </a>
+                    <style>
+                      a.bad {
+                        filter: blur(3px);
+                      }
+                      .good {
+                        filter: blur(0px);
+                      }
+                      .swal-button {
+                        padding: 7px 19px;
+                        border-radius: 2px;
+                        background-color: #ff0000;
+                        font-size: 12px;
+                        border: 1px solid #ff0000;
+                        text-shadow: 0px -1px 0px rgba(255, 0, 0, 0, 1);
+                      }
+                       .swal-button:hover
+                        cursor: pointer;{
+                      background-color: #ff0000;
+                      }
+                      .swal-modal {
+                        background-color: #0c0c0c;
+                      }
+                      .swal-text {
+                        color: #ffffff;
+                        text-align: center;
+                      }
+                      .swal-title {
+                        color: #ff0000;
+                      }
+                    </style>
                     <script>
-                      function light() {
-                        var el = document.body;
-                        el.classList.toggle("light-body");
+                      function web() {
+                        swal({
+                          title: "Web Shield On/Off",
+                          text: "You Turned On/Off The Website Shield!",
+                          icon: "warning",
+                          timer: 10000,
+                        });
+                        document.cookie =
+                          "Web-Protection=Protects You From Possible Attacks;";
                       }
                     </script>
                     <div id="google_translate_element2"></div>
@@ -1911,13 +2282,11 @@
           <footer>
             <div style="padding-top: 0px; padding-bottom: 0px">
               <!---<div class="container" style="color: var(--secondary);"><div class="row" style="color: var(--secondary);"><!----<div class="col item social"><a class="smoothScroll" href="#top"><i class="icon ion-android-arrow-up"></i></a></div>----</div>--->
-              <p class="text-center text">
-                Copyright XOPBOT 2021 - 2022 © All Rights Reserved
-              </p>
+              <p id="a27" class="text-center" style="display:block;color: var(--text-color);">Copyright XOPBOT 2021 - 2022 © All Rights Reserved</p>
+              <p id="a28" class="text-center" style="display:none;color: var(--background);">Copyright XOPBOT 2021 - 2022 © All Rights Reserved</p>
               <br />
-              <p class="text-center text" style="padding: 0px">
-                Created by&nbsp; 👑HACKERPROᵈᵉᵛ#1498
-              </p>
+              <p id="a29" class="text-center" style="padding: 0px;display:block;color: var(--text-color);">Created With 💖 By&nbsp;👑HACKERPROᵈᵉᵛ#1498</p>
+              <p id="a30" class="text-center" style="padding: 0px;display:none;color: var(--background);">Created With 💖 By&nbsp;👑HACKERPROᵈᵉᵛ#1498</p>
             </div>
           </footer>
           <br />
@@ -1926,6 +2295,8 @@
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/js/light.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
       id="Cookiebot"
