@@ -28,7 +28,7 @@ input:checked + .sliderb:before{-webkit-transform:translateX(20px);-ms-transform
 .dropdown-content a{display:block;color:#ffffff;padding:5px;text-decoration:none}
 .dropdown-content a:hover{color:#FFFFFF;background-color:#ff0000}
 .dropdownb{display:inline-block;position:relative}
-.dropdown-contentb{font-size:12px;left:-180%;margin-right:0.5px;display:none;position:absolute;width:130px;overflow:auto;box-shadow:0 10px 10px 0 rgba(0,0,0,0.4);background-color:#000000}
+.dropdown-contentb{font-size:14px;left:-180%;margin-right:0.5px;display:none;position:absolute;width:145px;overflow:auto;box-shadow:0 10px 10px 0 rgba(0,0,0,0.4);background-color:#000000}
 .dropdownb:hover .dropdown-contentb{display:block}
 .dropdown-contentb a p{display:block;color:#ffffff;padding:5px;text-decoration:none}
 .dropdown-contentb a p:hover{color:#FFFFFF;background-color:#ff0000}
