@@ -176,7 +176,7 @@
       }
     </style>
     <div id="wrapper">
-      <div id="top" style="height: 12px;display:block;">
+      <div id="top" style="height: 12px; display: block">
         <nav
           class="navbar navbar-light navbar-expand fixed-top"
           style="
@@ -343,7 +343,7 @@
           </div>
         </nav>
       </div>
-        <div id="top1" style="height: 12px;display:none;">
+      <div id="top1" style="height: 12px; display: none">
         <nav
           class="navbar navbar-light navbar-expand fixed-top"
           style="
@@ -419,7 +419,7 @@
                     ></a>
                     <div class="dropdown-contentb">
                       <a class="text"
-                        >Dark Mode&nbsp;&nbsp;&nbsp;<label class="switchb">
+                        >Dark Mode&nbsp;&nbsp;&nbsp;&nbsp;<label class="switchb">
                           <input type="checkbox" />
                           <span
                             onclick="light()"
@@ -472,7 +472,7 @@
                       </a>
                       <div class="dropdown-content">
                         <a class="text"
-                          >Dark Mode&nbsp;&nbsp;&nbsp;<label class="switchb">
+                          >Dark Mode&nbsp;&nbsp;&nbsp;&nbsp;<label class="switchb">
                             <input type="checkbox" />
                             <span
                               onclick="light()"
@@ -511,6 +511,10 @@
         </nav>
       </div>
       <!----Up Signs And More---->
+      <style>.that-is-pfp:hover {
+        box-shadow: 0 0 10px 0 rgba(255,0,0,1), 0 0 10px 0 rgba(255,0,0,1)
+        }
+      </style>
       <header
         class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center"
         style="height: 418px; text-align: center; margin: 55px"
@@ -520,9 +524,9 @@
           class="that-is-pfp"
           width="150"
           height="150"
-          style="margin-top: 30px; border: 5px solid red; border-radius: 5px"
+          style="margin-top: 30px;"
           alt="XOPBOT"
-          title="Do Not Disturb"
+          title="XOPBOT"
           loading="lazy"
         />
         <h1 class="d-xl-flex justify-content-xl-start animated_rainbow_1">
@@ -1593,7 +1597,6 @@
                 </span>
               </div>
             </center>
-            <script src="https://cdn.filobot.xyz/assets/js/ICFLqiSaEoGVY8T6VCPDQouyePHDRoI0v7tmqfCIRyyoWv2sZq.js"></script>
             <br /><br /><br />
             <center>
               <div id="a15" style="display: block">
@@ -2017,17 +2020,17 @@
                     Extras
                   </p>
                   <ul class="list-unstyled">
-                    <li id="a23" style="display:block;">
+                    <li id="a23" style="display: block">
                       <a
-                        style="color: var(--text-color);"
+                        style="color: var(--text-color)"
                         title="Languages"
                         href="https://xopbot.glitch.me/"
                         >Languages</a
                       >
                     </li>
-                    <li id="a24" style="display:none;">
+                    <li id="a24" style="display: none">
                       <a
-                        style="color: var(--background);"
+                        style="color: var(--background)"
                         title="Languages"
                         href="https://xopbot.glitch.me/"
                         >Languages</a
@@ -2282,14 +2285,53 @@
           <footer>
             <div style="padding-top: 0px; padding-bottom: 0px">
               <!---<div class="container" style="color: var(--secondary);"><div class="row" style="color: var(--secondary);"><!----<div class="col item social"><a class="smoothScroll" href="#top"><i class="icon ion-android-arrow-up"></i></a></div>----</div>--->
-              <p id="a27" class="text-center" style="display:block;color: var(--text-color);">Copyright XOPBOT 2021 - 2022 © All Rights Reserved</p>
-              <p id="a28" class="text-center" style="display:none;color: var(--background);">Copyright XOPBOT 2021 - 2022 © All Rights Reserved</p>
+              <p
+                id="a27"
+                class="text-center"
+                style="display: block; color: var(--text-color)"
+              >
+                Copyright XOPBOT 2021 - 2022 © All Rights Reserved
+              </p>
+              <p
+                id="a28"
+                class="text-center"
+                style="display: none; color: var(--background)"
+              >
+                Copyright XOPBOT 2021 - 2022 © All Rights Reserved
+              </p>
               <br />
-              <p id="a29" class="text-center" style="padding: 0px;display:block;color: var(--text-color);">Created With 💖 By&nbsp;👑HACKERPROᵈᵉᵛ#1498</p>
-              <p id="a30" class="text-center" style="padding: 0px;display:none;color: var(--background);">Created With 💖 By&nbsp;👑HACKERPROᵈᵉᵛ#1498</p>
+              <p
+                id="a29"
+                class="text-center"
+                style="padding: 0px; display: block; color: var(--text-color)"
+              >
+                Created With 💖 By&nbsp;👑HACKERPROᵈᵉᵛ#1498
+              </p>
+              <p
+                id="a30"
+                class="text-center"
+                style="padding: 0px; display: none; color: var(--background)"
+              >
+                Created With 💖 By&nbsp;👑HACKERPROᵈᵉᵛ#1498
+              </p>
             </div>
           </footer>
           <br />
+          <p
+            style="float: right; padding-right: 10px"
+            class="animated_rainbow_1"
+          >
+            Website Version 3.9.0
+          </p>
+          <p style="float: left; padding-left: 10px" class="animated_rainbow_1">
+            Connection Speed:</p>&nbsp;
+            <button
+              onclick="displaySpeed()"
+              style="background-color:#000000;height:auto;"
+            >
+              <a style="color:#ffffff;">Check</a>
+            </button>
+          <br/>
           <!----Scripts And Links---->
           <script async src="/bootstrap/js/bootstrap.min.js"></script>
         </div>
@@ -2345,6 +2387,34 @@
           {}
         )
       );
+    </script>
+    <script type="text/javascript">
+      var userImageLink =
+        "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
+      var time_start, end_time;
+      var downloadSize = 5616998;
+      var downloadImgSrc = new Image();
+      downloadImgSrc.onload = function () {
+        end_time = new Date().getTime();
+      };
+      time_start = new Date().getTime();
+      downloadImgSrc.src = userImageLink;
+      function displaySpeed() {
+        var timeDuration = (end_time - time_start) / 1000;
+        var loadedBits = downloadSize * 8;
+        var bps = (loadedBits / timeDuration).toFixed(3);
+        var speedInKbps = (bps / 1024).toFixed(3);
+        var speedInMbps = (speedInKbps / 1024).toFixed(3);
+        alert(
+          "Your internet connection speed is: \n" +
+            bps +
+            " bps\n" +
+            speedInKbps +
+            " kbps\n" +
+            speedInMbps +
+            " Mbps\n"
+        );
+      }
     </script>
     <script>
       $.getJSON(
